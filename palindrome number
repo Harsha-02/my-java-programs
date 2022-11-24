@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        int s=0,rem,n,c;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter a number  : ");
+        n=sc.nextInt();
+        c=n;
+        while(n!=0)
+        {
+            rem=n%10;
+            s=(s*10)+rem;
+            n=n/10;
+        }
+        if(s==c)
+        System.out.println(c+" is a palindrome");
+        else
+        System.out.println(c+" is  not a palindrome");
+    }
+}
